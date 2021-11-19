@@ -6,4 +6,4 @@ FROM Invoice i
 JOIN Customer c
     ON c.customerId = i.customerId
 JOIN Employee e
-    ON e.employeeId = c.supportRepId
+    ON e.employeeId = c.supportRepId;

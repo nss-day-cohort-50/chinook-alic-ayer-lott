@@ -1,3 +1,4 @@
 SELECT COUNT (InvoiceId)
-FROM Invoice
-WHERE InvoiceDate BETWEEN '2009-01-01' AND '2011-12-31';
+FROM Invoice i
+WHERE (i.InvoiceDate LIKE '2009%')
+OR (i.InvoiceDate LIKE '2011%');
